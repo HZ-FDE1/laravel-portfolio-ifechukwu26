@@ -29,6 +29,14 @@ Homestead.json
 auth.json
 /.fleet
 
+# Laravel 10.31.0 specific rules
+/.phpunit.cache
+# /public/build # NOT ignored so the prebuilt assets are available for students
+.env.backup
+.env.production
+auth.json
+/.fleet
+
 
 ### PhpStorm ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
