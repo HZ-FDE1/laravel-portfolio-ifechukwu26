@@ -1,6 +1,11 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\FaqController;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\WelcomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +18,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');
+//Route::get('/', function () {
+//    return view('welcome');
+//})->name('home');
+
+Route::get('/', [WelcomeController::class, 'show']);
+Route::get('/profile', [ProfileController::class, 'show']);
+Route::get('/dashboard', [DashboardController::class, 'show']);
+Route::get('/faq', [FaqController::class, 'show']);
+
+Route::get('/posts', [PostController::class, 'index']);
