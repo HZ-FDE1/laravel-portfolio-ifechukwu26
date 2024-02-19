@@ -1,25 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css">
-    <title>Home</title>
-</head>
-<body class="design">
-<nav class="navigation">
-    <div class="nav-items">
-        <a href="index.html" class="blog_tab">Home</a>
-        <a href="profile.html" class="blog_tab">Profile</a>
-        <a href="dashboard.html" class="blog_tab">Dashboard</a>
-        <a href="blog.html" class="blog_tab">Blog</a>
-        <a href="faq.html" class="blog_tab">FAQ</a>
-    </div>
-    <a href="https://hz.nl/en">
-        <img class="logo" src="images/university-of-applied-sciences-300x0-c-default.webp" alt="know more about hz university">
-    </a>
-</nav>
+@extends('layout.layout')
+
+@section('content')
 <div>
     <h4>WELCOME TO MY BLOG PAGE!!!!</h4>
 </div>
@@ -60,5 +41,4 @@
         </details>
     </section>
 </main>
-</body>
-</html>
+@endsection

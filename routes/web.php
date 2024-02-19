@@ -27,4 +27,4 @@ Route::get('/profile', [ProfileController::class, 'show']);
 Route::get('/dashboard', [DashboardController::class, 'show']);
 Route::get('/faq', [FaqController::class, 'show']);
 
-Route::get('/posts', [PostController::class, 'index']);
+Route::get('/blog', [PostController::class, 'show']);
