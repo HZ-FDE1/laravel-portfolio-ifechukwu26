@@ -14,12 +14,12 @@
             <li class="home_tab"><a href="/" class="{{ Request::path() === 'welcome' ? 'active' : '' }}">Home</a></li>
             <li class="home_tab"><a href="/profile" class="{{ Request::path() === 'profile' ? 'active' : '' }}">Profile</a></li>
             <li class="home_tab"><a href="/dashboard" class="{{ Request::path() === 'dashboard' ? 'active' : '' }}">Dashboard</a></li>
-            <li class="home_tab"><a href="/blog" class="{{ Request::path() === 'blog' ? 'active' : '' }}">Blog</a></li>
-            <li class="home_tab"><a href="/faq" class="{{ Request::path() === 'faq' ? 'active' : '' }}">FAQ</a></li>
+            <li class="home_tab"><a href="/posts" class="{{ Request::path() === 'blog' ? 'active' : '' }}">Blog</a></li>
+            <li class="home_tab"><a href="/faqs" class="{{ Request::path() === 'faqs' ? 'active' : '' }}">FAQ</a></li>
         </ul>
     </div>
     <a href="https://hz.nl/en">
-        <img class="logo" src="../public/images1/images/university-of-applied-sciences-300x0-c-default.webp" alt= "know more about hz university">
+{{--        <img class="logo" src="{{asset(./images1/images/university-of-applied-sciences-300x0-c-default.webp) }}" alt= "know more about hz university">--}}
     </a>
 </nav>
 
