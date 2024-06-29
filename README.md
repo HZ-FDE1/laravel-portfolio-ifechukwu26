@@ -55,3 +55,61 @@ outstanding article [How to Setup a Laravel Project You Cloned from Github.com](
 ## Licensing
 
 The code in this project is licensed under MIT license.
+
+
+THE TESTING DOCUMENTATION
+Testing- IT Development Portfolio
+
+User Stories and Tests
+User story: FAQ Registration
+As an admin, I want to register FAQs successfully with valid inputs so that users can see correct information on the FAQ Page.
+It is accepted when:
+•	The admin can register an FAQ with valid question, answer and link.
+•	System displays an error message for invalid inputs.
+
+Test Plan:
+System Test
+Happy Path:
+Verify that an FAQ can be registered successfully with valid inputs.
+Unhappy Path:
+Verify that the system displays appropriate error messages for invalid inputs.
+
+Unit Test:
+Test the function that validates FAQ input data.
+Evaluation
+Possible Mistake/ Error Detected by tests
+•	The tests can detect issues such as incorrect handling of form submissions, improper validation logic and database-related errors such as missing or incorrect entries.
+Possible mistake/ Error not detected by tests
+•	The tests might not detect user interface issues. Additionally, they might not catch errors related to concurrent access or integration with other systems.
+Extent Of Correct Functionality
+The tests provide confidence that the specific functionalities described in the user stories work correctly, including the validation logic and database interactions.
+However, they do not cover all possible scenarios. Comprehensive testing that also includes integration test and performance tests., is necessary to ensure the system works correctly in all aspects.
+
+User story: Create a post
+As a user, I want to create a new post so that I can share my thoughts with others.
+It is accepted when:
+•	User can successfully create a post with a valid title and content.
+•	System displays an error when trying to create a post without a title.
+
+Test Plan:
+System Test
+Happy Path:
+User can create post successfully.
+Unhappy Path:
+User cannot create post with invalid input.
+
+Unit Test:
+It validates the title and content and provides various input to ensure it correctly validates valid and invalid data.
+
+Evaluation
+Possible Mistake/ Error Detected by tests
+•	The tests can detect if the system fails to create a post when the title is missing.
+•	The test can also identify if a post is incorrectly added to the database despite invalid input.
+Possible mistake/ Error not detected by tests
+•	The tests might not detect performance issues such as slow database transactions.
+
+Extent Of Correct Functionality
+These tests confirms that the post creation functionality works for the provided scenarios.
+ 
+THE SCREENSHOT
+![img.png](img.png)

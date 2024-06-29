@@ -18,4 +18,9 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+
+    #Sening the error mesages
+    ErrorDocument 404 /resources/views/components/errors/404.blade.php
+    ErrorDocument 505 /resources/views/components/errors/505.blade.php
+
 </IfModule>
